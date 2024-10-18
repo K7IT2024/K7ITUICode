@@ -1,12 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 const MobileNavbar = () => {
   return (
     <div className="display-mob">
-      <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-fixed shadow fixed-top  start-0 end-0">
-        <div class="container-fluid px-0">
-          <Link
-            class="navbar-brand font-weight-bolder ms-sm-3  d-block d-md-none"
+      <nav className="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-fixed shadow fixed-top start-0 end-0">
+        <div className="container-fluid px-0">
+          <NavLink
+            className="navbar-brand font-weight-bolder ms-sm-3 d-block d-md-none"
             to="/"
             rel="tooltip"
             title="Designed and Coded by Creative Tim"
@@ -14,14 +15,14 @@ const MobileNavbar = () => {
           >
             <img
               src="../assets/img/logo.png"
-              alt="Bootstrap"
+              alt="Logo"
               width="60"
               height="40"
               style={{ objectFit: "contain" }}
             />
-          </Link>
+          </NavLink>
           <button
-            class="navbar-toggler shadow-none ms-md-2"
+            className="navbar-toggler shadow-none ms-md-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navigation"
@@ -29,77 +30,44 @@ const MobileNavbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon mt-2">
-              <span class="navbar-toggler-bar bar1"></span>
-              <span class="navbar-toggler-bar bar2"></span>
-              <span class="navbar-toggler-bar bar3"></span>
+            <span className="navbar-toggler-icon mt-2">
+              <span className="navbar-toggler-bar bar1"></span>
+              <span className="navbar-toggler-bar bar2"></span>
+              <span className="navbar-toggler-bar bar3"></span>
             </span>
           </button>
-          <div
-            class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0"
-            id="navigation"
-          >
-            <ul class="navbar-nav navbar-nav-hover ms-auto">
-              <li class="nav-item dropdown dropdown-hover mx-2">
-                <Link
-                  to="/MobileAboutUs"
-                  role="button"
-                  class="nav-link ps-2 d-flex cursor-pointer align-items-center text-black"
-                >
-                 <i className="ri-group-line opacity-6 me-2 text-md"></i>
-                  About Us
-                </Link>
-              </li>
-              <li class="nav-item dropdown dropdown-hover mx-2">
-                <Link
-                  to="/MobileIndustries"
-                  role="button"
-                  class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-                >
-                 <i class="ri-community-line opacity-6 me-2 text-md" aria-hidden="true"></i>
-                  Industries
-                </Link>
-              </li>
-              <li class="nav-item dropdown dropdown-hover mx-2">
-                <Link
-                  to="/MobileServices"
-                  role="button"
-                  class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-                >
-                  <i class="ri-server-line opacity-6 me-2 text-md" aria-hidden="true"></i>
-                  Services
-                </Link>
-              </li>
-              <li class="nav-item dropdown dropdown-hover mx-2">
-                <Link
-                  to="/MobileOurLeadership"
-                  role="button"
-                  class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-                >
-                  <i class="ri-insert-row-top opacity-6 me-2 text-md"></i>
-                  Our Leadership
-                </Link>
-              </li>
-              <li class="nav-item dropdown dropdown-hover mx-2">
-                <Link
-                  to="/MobileTrainingPlacements"
-                  role="button"
-                  class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-                >
-                  <i class="ri-presentation-line opacity-6 me-2 text-md"></i>
-                  Training & Placements
-                </Link>
-              </li>
-              <li class="nav-item dropdown dropdown-hover mx-2">
-                <Link
-                  to="/MobileCareer"
-                  role="button"
-                  class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-                >
-                  <i class="ri-graduation-cap-line opacity-6 me-2 text-md"></i>
-                  Career
-                </Link>
-              </li>
+          <div className="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+            <ul className="navbar-nav navbar-nav-hover ms-auto">
+              {[
+                { to: "/MobileAboutUs", icon: "ri-group-line", label: "About Us" },
+                { to: "/MobileIndustries", icon: "ri-community-line", label: "Industries" },
+                { to: "/MobileServices", icon: "ri-server-line", label: "Services" },
+                { to: "/MobileOurLeadership", icon: "ri-insert-row-top", label: "Our Leadership" },
+                { to: "/MobileTrainingPlacements", icon: "ri-presentation-line", label: "Training & Placements" },
+                { to: "/MobileCareer", icon: "ri-graduation-cap-line", label: "Career" },
+              ].map(({ to, icon, label }) => (
+                <li className="nav-item dropdown dropdown-hover mx-2" key={to}>
+                  <NavLink
+                    to={to}
+                    className={({ isActive }) =>
+                      `nav-link ps-2 d-flex cursor-pointer align-items-center ${
+                        isActive ? "text-primary" : "text-black"
+                      }`
+                    }
+                  >
+                    {({ isActive }) => (
+                      <>
+                        <i
+                          className={`${icon} me-2 text-md ${
+                            isActive ? "text-primary" : "opacity-6"
+                          }`}
+                        ></i>
+                        {label}
+                      </>
+                    )}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

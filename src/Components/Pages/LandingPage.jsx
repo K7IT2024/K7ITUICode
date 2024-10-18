@@ -2,6 +2,7 @@ import React from "react";
 import Mobile from "./Mobile/Mobile";
 import { FaBook, FaHeartbeat, FaHospital, FaShoppingCart, FaTruck } from "react-icons/fa";
 import { FaUniversalAccess } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 
 const LandingPage = () => {
@@ -169,10 +170,10 @@ const LandingPage = () => {
                   </b>
                   <div></div>
                 </div>
-                <a href="/Aboutus" class="text-primary icon-move-right">
+                <Link to="/Aboutus" class="text-primary icon-move-right">
                   More about us
                   <i class="fas fa-arrow-right text-sm ms-1"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -212,13 +213,13 @@ const LandingPage = () => {
                           ecosystems and create value at every stage of the
                           customer journey.
                         </p>
-                        <a
-                          href="/Industries"
+                        <Link
+                          to="/Industries"
                           class="text-primary icon-move-right "
                         >
                           Read More
                           <i class="fas fa-arrow-right text-sm ms-1"></i>
-                        </a>
+                        </Link>
                       </div>
                       <div class="col-md-5 ms-lg-auto">
                         <div class="p-3">
@@ -246,13 +247,13 @@ const LandingPage = () => {
                           which is driving healthcare players to rewire their
                           operations and build cross-industry ecosystems.
                         </p>
-                        <a
+                        <Link
                           href="/Industries"
                           class="text-primary icon-move-right "
                         >
                           Read More
                           <i class="fas fa-arrow-right text-sm ms-1"></i>
-                        </a>
+                        </Link>
                       </div>
                       <div class="col-md-5 ms-lg-auto">
                         <div class="p-3">
@@ -280,13 +281,13 @@ const LandingPage = () => {
                           today have amplified the need for learning technology
                           solutions for blended learning experiences.
                         </p>
-                        <a
-                          href="/Industries"
+                        <Link
+                          to="/Industries"
                           class="text-primary icon-move-right "
                         >
                           Read More
                           <i class="fas fa-arrow-right text-sm ms-1"></i>
-                        </a>
+                        </Link>
                       </div>
                       <div class="col-md-5 ms-lg-auto">
                         <div class="p-3">
@@ -316,13 +317,14 @@ const LandingPage = () => {
                           supported by technology platforms, they are creating
                           innovative and personalized offerings.
                         </p>
-                        <a
-                          href="/Industries"
+                        <Link
+                          to="/Industries"
                           class="text-primary icon-move-right "
                         >
                           Read More
                           <i class="fas fa-arrow-right text-sm ms-1"></i>
-                        </a>
+                        </Link>;
+                        >
                       </div>
                       <div class="col-md-5 ms-lg-auto">
                         <div class="p-3">
@@ -378,7 +380,7 @@ const LandingPage = () => {
             </div>
             <div class="row mt-5">
               <div class="col-lg-4 mb-lg-0 mb-4">
-                <a href="/Services">
+                <Link to="/Services">
                   <div class="card card-background move-on-hover mb-4">
                     <div
                       class="full-background"
@@ -401,8 +403,8 @@ const LandingPage = () => {
                       </p>
                     </div>
                   </div>
-                </a>
-                <a href="/Services">
+                </Link>
+                <Link to="/Services">
                   <div class="card card-background move-on-hover">
                     <div
                       class="full-background"
@@ -423,10 +425,10 @@ const LandingPage = () => {
                       </p>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div class="col-lg-4 mb-lg-0 mb-4">
-                <a href="/Services">
+                <Link to="/Services">
                   <div class="card card-background move-on-hover mb-4">
                     <div
                       class="full-background"
@@ -447,8 +449,8 @@ const LandingPage = () => {
                       </p>
                     </div>
                   </div>
-                </a>
-                <a href="/Services">
+                </Link>
+                <Link to="/Services">
                   <div class="card card-background move-on-hover">
                     <div
                       class="full-background"
@@ -470,10 +472,10 @@ const LandingPage = () => {
                       </p>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div class="col-lg-4">
-                <a href="/Services">
+                <Link to="/Services">
                   <div class="card card-background move-on-hover mb-4">
                     <div
                       class="full-background"
@@ -495,8 +497,8 @@ const LandingPage = () => {
                       </p>
                     </div>
                   </div>
-                </a>
-                <a href="/Services">
+                </Link>
+                <Link to="/Services">
                   <div class="card card-background move-on-hover">
                     <div
                       class="full-background"
@@ -517,7 +519,7 @@ const LandingPage = () => {
                       </p>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

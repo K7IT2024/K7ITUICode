@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 const Aboutus = () => {
   return (
@@ -30,12 +30,14 @@ const Aboutus = () => {
                     clients across various sectors.
                   </p>
                   <div class="buttons">
+                    <Link to="/Career">
                     <button
                       type="button"
                       class="btn btn-rounded btn-outline-success mt-4"
                     >
                       Contact K7 Infotech
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>

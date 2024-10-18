@@ -10,7 +10,8 @@ const MobileIndustries = () => {
         <div class="mobscrollable-tabs-container ">
           <div className="card">
             <ul id="pills-tab" role="tablist">
-              <li className="text-center">
+              <li className="text-center px-3">
+              <div>
                 <a
                   class="avatar avatar-xl rounded-circle border border-warning p-2"
                   id="pills-ecommerce-tab"
@@ -26,12 +27,15 @@ const MobileIndustries = () => {
                     src="https://cdn3d.iconscout.com/3d/premium/thumb/announcement-of-product-discounts-in-e-commerce-7735410-6241789.png?f=webp"
                     className=""
                   />
+                  
                 </a>
+            </div>
                 <small class="mb-0 text-center mt-2 text-xs source-serif-4 font-color">
                   E-commerce
                 </small>
               </li>
-              <li className="text-center">
+              <li className="text-center px-3">
+                <div>
                 <a
                   class="avatar avatar-xl rounded-circle border border-warning p-2"
                   id="pills-banking-tab"
@@ -48,11 +52,13 @@ const MobileIndustries = () => {
                     className=""
                   />
                 </a>
+                </div>
                 <small class="mb-0 text-center mt-2 text-xs source-serif-4 font-color">
                   Banking
                 </small>
               </li>
-              <li className="text-center">
+              <li className="text-center px-3">
+                <div>
                 <a
                   class="avatar avatar-xl rounded-circle border border-warning p-2"
                   id="pills-health-care-tab"
@@ -69,11 +75,13 @@ const MobileIndustries = () => {
                     className=""
                   />
                 </a>
+                </div> 
                 <small class="mb-0 text-center mt-2 text-xs source-serif-4 font-color">
                   Health Care
                 </small>
               </li>
-              <li className="text-center">
+              <li className="text-center px-3">
+                <div>
                 <a
                   class="avatar avatar-xl rounded-circle border border-warning p-2"
                   id="pills-education-tab"
@@ -90,11 +98,13 @@ const MobileIndustries = () => {
                     className=""
                   />
                 </a>
+                </div>
                 <small class="mb-0 text-center mt-2 text-xs source-serif-4 font-color">
                   Education
                 </small>
               </li>
-              <li className="text-center">
+              <li className="text-center px-3">
+                <div>
                 <a
                   class="avatar avatar-xl rounded-circle border border-warning p-2"
                   id="pills-travel-tab"
@@ -111,6 +121,7 @@ const MobileIndustries = () => {
                     className=""
                   />
                 </a>
+                </div>
                 <small class="mb-0 text-center mt-2 text-xs source-serif-4 text-nowrap font-color">
                   Travel & Logistics
                 </small>

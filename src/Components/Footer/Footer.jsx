@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="display">
-      <div class="position-relative mt-6">
+      <div class="position-relative mt-3">
         <div class="container">
           <div class="card bg-gradient-dark z-index-3">
             <div class="card-body">

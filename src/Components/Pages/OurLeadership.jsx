@@ -25,7 +25,7 @@ const OurLeadership = () => {
         </div>
       </div>
     </div>
-  </section>
+  </section>\
     </div>
   )
 }
