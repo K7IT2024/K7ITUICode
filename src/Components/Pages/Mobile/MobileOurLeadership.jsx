@@ -22,7 +22,7 @@ const MobileOurLeadership = () => {
             <div class="card-header mx-3 p-0 bg-transparent position-relative z-index-2">
               <Link class="d-block blur-shadow-image ">
                 <img
-                  src="../../assets/img/K7it.png"
+                  src="../../assets/img/k71.jpg"
                   alt="img-blur-shadow"
                   class="img-fluid shadow border-radius-lg img-height"
                   loading="lazy"

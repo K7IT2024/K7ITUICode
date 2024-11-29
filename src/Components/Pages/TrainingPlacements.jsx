@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from 'react';
 
 const TrainingPlacements = () => {
+  
+
   
   
   return (
@@ -94,7 +96,7 @@ const TrainingPlacements = () => {
           </div>
         </div>
       </div>
-      <div className="py-6">
+      <div className="py-2">
         <section class="features-3">
           <div class="container">
             <div class="row text-center justify-content-center">
@@ -113,7 +115,7 @@ const TrainingPlacements = () => {
                   <div class="card-header p-0 position-relative mt-n4 mx-2 z-index-2 ">
                     <a class="d-block blur-shadow-image">
                       <img
-                        src="../../assets/imgs/uiuximg"
+                        src="../../assets/imgs/advjava.jpeg"
                         alt="img-blur-shadow"
                         className="img-fluid shadow border-radius-lg services-images"
                         loading="lazy"
@@ -132,7 +134,7 @@ const TrainingPlacements = () => {
                   <div class="card-header p-0 position-relative mt-n4 mx-2 z-index-2">
                     <a class="d-block blur-shadow-image">
                       <img
-                        src="./../assets/imgs/mobilecloud.jfif"
+                        src="../../assets/imgs/advjava.jpeg"
                         alt="img-blur-shadow"
                         className="img-fluid shadow border-radius-lg services-images"
                         loading="lazy"
@@ -207,7 +209,7 @@ const TrainingPlacements = () => {
                   <div class="card-header p-0 position-relative mt-n4 mx-2 z-index-2 ">
                     <a class="d-block blur-shadow-image">
                       <img
-                        src="../../assets/imgs/uiuximg"
+                        src="../../assets/imgs/Front-end-Development.jpeg"
                         alt="img-blur-shadow"
                         className="img-fluid shadow border-radius-lg services-images"
                         loading="lazy"
@@ -598,7 +600,7 @@ const TrainingPlacements = () => {
           </div>
         </div>
       </div>
-      <section class="py-5 fadeIn1 fadeInBottom">
+      <section class="py-0 fadeIn1 fadeInBottom">
         <div class="container">
           <div class="row">
             <div class="col-md-8 mx-auto text-center">
@@ -640,7 +642,7 @@ const TrainingPlacements = () => {
                         <div class="col-lg-3 text-end my-auto">
                           <img
                             class="avatar avatar-xl"
-                            src="../../assets/img/team-1.jpg"
+                            src="../../assets/Traineeimgs/kesav.jpeg"
                           />
                         </div>
                       </div>
@@ -675,8 +677,7 @@ const TrainingPlacements = () => {
                         <div class="col-lg-3 text-end my-auto">
                           <img
                             class="avatar avatar-xl"
-                            src="../../assets/img/team-1.jpg"
-                          />
+                            src="../../assets/Traineeimgs/Dhanya.jpeg"   />
                         </div>
                       </div>
                     </div>
@@ -710,7 +711,7 @@ const TrainingPlacements = () => {
                         <div class="col-lg-3 text-end my-auto">
                           <img
                             class="avatar avatar-xl"
-                            src="../../assets/img/team-1.jpg"
+                            src="../../assets/Traineeimgs/LeelaVinod.jpeg"
                           />
                         </div>
                       </div>
@@ -729,7 +730,7 @@ const TrainingPlacements = () => {
 
                           <h6>
                             <small>
-                              M.Tech(PE)
+                              B.SC(Math), B.Ed
                             </small>
                             <br />
 
@@ -749,7 +750,7 @@ const TrainingPlacements = () => {
                         <div class="col-lg-3 text-end my-auto">
                           <img
                             class="avatar avatar-xl"
-                            src="../../assets/img/team-1.jpg"
+                            src="../../assets/Traineeimgs/ThulasiKumar.jpeg"
                           />
                         </div>
                       </div>
@@ -784,7 +785,7 @@ const TrainingPlacements = () => {
                         <div class="col-lg-3 text-end my-auto">
                           <img
                             class="avatar avatar-xl"
-                            src="../../assets/img/team-1.jpg"
+                            src="../../assets/Traineeimgs/UdayRaj.jpeg"
                           />
                         </div>
                       </div>
@@ -808,23 +809,26 @@ const TrainingPlacements = () => {
               ></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button
-              class="carousel-control-next "
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            
+<button
+  className="carousel-control-next"
+  type="button"
+  data-bs-target="#carouselExampleIndicators"
+  data-bs-slide="next"
+>
+  <span
+    className="carousel-control-next-icon"
+    style={{ filter: 'invert(1)' }} // Correctly formatted as an object
+    aria-hidden="true"
+  ></span>
+  <span className="visually-hidden">Next</span>
+</button>
+
           </div>
         </div>
       </section>
 
-<section className="py-5 fadeIn1 fadeInBottom">
+      <section className="py-5 fadeIn1 fadeInBottom">
   <div className="container">
     <div className="row">
       <div className="col-md-8 mx-auto text-center">
@@ -835,67 +839,87 @@ const TrainingPlacements = () => {
     </div>
     <div id="carouselStudentFeedback" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
-        {Array.from({ length: Math.ceil(8 / 3) }).map((_, carouselIndex) => (
+        {Array.from({ length: Math.ceil(8 / 4) }).map((_, carouselIndex) => (
           <div className={`carousel-item ${carouselIndex === 0 ? 'active' : ''}`} key={carouselIndex}>
-            <div className="row container mt-lg-5 mt-4">
+            <div className="row container mt-lg-4 mt-4">
               {[
                 {
-                  name: "Student Name 1",
+                  name: "Supriya",
                   feedback: "Great training! It helped me a lot in my career.",
-                  image: "../../assets/img/team-4.jpg",
-                  videoLink: "https://www.youtube.com/watch?v=example1",
+                  image: "../../assets/Traineeimgs/supriya.jpeg",
+                  videoLink: "https://www.youtube.com/shorts/-ggM7POjSR8",
                 },
                 {
-                  name: "Student Name 2",
+                  name: "Gnana Sekhar M",
                   feedback: "The best experience I've ever had. Highly recommend!",
-                  image: "../../assets/img/team-4.jpg",
-                  videoLink: "https://www.youtube.com/watch?v=example2",
+                  image: "../../assets/Traineeimgs/GnanaSekhar.jpg",
+                  videoLink: "https://www.youtube.com/shorts/KE0RzxQDENA",
                 },
                 {
-                  name: "Student Name 3",
+                  name: "Sarat",
                   feedback: "I learned so much! The trainers are very experienced.",
-                  image: "../../assets/img/team-4.jpg",
-                  videoLink: "https://www.youtube.com/watch?v=example3",
+                  image: "../../assets/Traineeimgs/sarat.jpeg",
+                  videoLink: "https://www.youtube.com/watch?v=F96xYewAn1g",
                 },
                 {
-                  name: "Student Name 4",
+                  name: "Prasad A",
                   feedback: "An amazing experience! I gained a lot of practical knowledge.",
-                  image: "../../assets/img/team-4.jpg",
-                  videoLink: "https://www.youtube.com/watch?v=example4",
+                  image: "../../assets/Traineeimgs/prasad.jpeg",
+                  videoLink: "https://www.youtube.com/shorts/VHpVhNDdvCY",
                 },
                 {
-                  name: "Student Name 5",
+                  name: "Thulasi Kumar A",
                   feedback: "The trainers were very helpful and knowledgeable.",
-                  image: "../../assets/img/team-4.jpg",
-                  videoLink: "https://www.youtube.com/watch?v=example5",
+                  image: "../../assets/Traineeimgs/ThulasiKumar.jpeg",
+                  videoLink: "https://www.youtube.com/watch?v=8lUYxN32LFc",
                 },
+                
                 {
-                  name: "Student Name 6",
-                  feedback: "Highly informative and practical sessions.",
-                  image: "../../assets/img/team-4.jpg",
-                  videoLink: "https://www.youtube.com/watch?v=example6",
-                },
-                {
-                  name: "Student Name 7",
-                  feedback: "I am more confident in my skills now. Thank you!",
-                  image: "../../assets/img/team-4.jpg",
-                  videoLink: "https://www.youtube.com/watch?v=example7",
-                },
-                {
-                  name: "Student Name 8",
+                  name: "Mounika A",
                   feedback: "The course was fantastic and very engaging.",
-                  image: "../../assets/img/team-4.jpg",
+                  image: "../../assets/Traineeimgs/Mouni.jpeg",
+                  videoLink: "https://www.youtube.com/watch?v=2HyNwdjHhms",
+                },
+                {
+                  name: "Reddi Kumari",
+                  feedback: "Elevating skills through expert Java training.",
+                  image: "../../assets/Traineeimgs/Reddi.jpeg",
                   videoLink: "https://youtu.be/DjYZk8nrXVY?si=FARPr2NwfZXguZQn",
                 },
+                {
+                  name: "Likith Kumar K",
+                  feedback: "Mastering Java for future innovators.",
+                  image: "../../assets/Traineeimgs/LikithKumar.jpeg",
+                  videoLink: "https://youtu.be/DjYZk8nrXVY?si=FARPr2NwfZXguZQn",
+                },
+                {
+                  name: "Babu Reddy B",
+                  feedback: "Transforming learners into Java experts.",
+                  image: "../../assets/Traineeimgs/BabuReddy.jpeg",
+                  videoLink: "https://www.youtube.com/shorts/MWedp3V3A_k",
+                },
+                {
+                  name: "Kumar",
+                  feedback: "Transforming learners into Java expert.",
+                  image: "../../assets/Traineeimgs/kumar.jpeg",
+                  videoLink: "https://youtube.com/shorts/U8ab9DHawoI",
+                },
+                {
+                  name: "Manish",
+                  feedback: "Transforming learners into Java expert.",
+                  image: "../../assets/Traineeimgs/manish.jpeg",
+                  videoLink: "https://youtu.be/DjYZk8nrXVY?si=FARPr2NwfZXguZQn",
+                }
               ]
-              .slice(carouselIndex * 3, carouselIndex * 3 + 3) // Display 3 cards per slide
+              .slice(carouselIndex * 4, carouselIndex * 4 + 4) // Display 4 cards per slide
               .map((student, index) => (
-                <div className="col-lg-4 col-sm-6 mb-4" key={index}>
+                <div className="col-lg-3 col-sm-6 mb-4" key={index}> {/* Adjusted to col-lg-3 for 4 cards */}
                   <div
                     className="card"
                     style={{
                       position: 'relative',
-                      overflow: 'hidden', // Prevent overflow for opacity effect
+                      overflow: 'hidden',
+                      height: '240px', // Set a reduced height for the card
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.opacity = 0.7; // Change opacity on hover
@@ -912,9 +936,9 @@ const TrainingPlacements = () => {
                       className="card-img-top"
                       src={student.image}
                       alt={student.name}
-                      style={{ width: '100%', height: 'auto' }}
+                      style={{ width: '100%', height: '150px', objectFit: 'cover' }} // Adjust image height
                     />
-                    <div className="card-body text-center">
+                    <div className="card-body text-center" style={{ padding: '2px'  }}>
                       <h5 className="text-rose">{student.name}</h5>
                       <p>“{student.feedback}”</p>
                       <div className="overlay" style={{
@@ -930,7 +954,7 @@ const TrainingPlacements = () => {
                         color: 'white',
                         opacity: 0,
                         transition: 'opacity 0.3s',
-                        pointerEvents: 'none', // Disable pointer events on overlay by default
+                        pointerEvents: 'none',
                       }}>
                         <a 
                           href={student.videoLink} 
@@ -940,7 +964,7 @@ const TrainingPlacements = () => {
                             color: 'white', 
                             fontSize: '1.2rem', 
                             textDecoration: 'none', 
-                            pointerEvents: 'auto' // Enable pointer events for the link
+                            pointerEvents: 'auto'
                           }} 
                         >
                           Watch Video
@@ -976,8 +1000,760 @@ const TrainingPlacements = () => {
   </div>
 </section>
 
+{/* student training and placements */}
+<section className="py-0 fadeIn1 fadeInBottom ">
+      <div className="container text-center">
+        <h4 className="text-gradient text-primary text-border font-monospace mb-4">STUDENT TRAINING AND PLACEMENTS</h4>
+        <button
+  className="btn btn-outline-dark btn-sm mb-0"
+  type="button"
+  name="button"
+  data-bs-toggle="modal"
+  data-bs-target="#placementsModal"
+  style={{
+    background: 'linear-gradient(45deg, #007bff, #0056b3)', 
+    border: '2px solid orange',
+    boxShadow: '0 0 10px rgba(255, 165, 0, 0.5)',
+    padding: '10px 12px', 
+    color: 'white', 
+    fontWeight: 'bold', 
+    transition: 'all 0.3s ease', 
+    margin : '10px'
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.boxShadow = '0 0 15px rgba(255, 165, 0, 0.7)';
+    e.currentTarget.style.transform = 'scale(1.05)'; 
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.boxShadow = '0 0 10px rgba(255, 165, 0, 0.5)';
+    e.currentTarget.style.transform = 'scale(1)';
+  }}
+>
+  View Placement Details
+</button>
+
+<button
+  className="btn btn-outline-dark btn-sm mb-0"
+  type="button"
+  name="button"
+  data-bs-toggle="modal"
+  data-bs-target="#traineeModal"
+  style={{
+    background: 'linear-gradient(45deg, #007bff, #0056b3)', 
+    border: '2px solid orange',
+    boxShadow: '0 0 10px rgba(255, 165, 0, 0.5)',
+    padding: '10px 12px', 
+    color: 'white', 
+    fontWeight: 'bold', 
+    transition: 'all 0.3s ease', 
+    margin : '10px'
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.boxShadow = '0 0 15px rgba(255, 165, 0, 0.7)';
+    e.currentTarget.style.transform = 'scale(1.05)'; // Slightly enlarge on hover
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.boxShadow = '0 0 10px rgba(255, 165, 0, 0.5)';
+    e.currentTarget.style.transform = 'scale(1)'; // Reset size
+  }}
+>
+  View trainee Details
+</button>
+
+
+<button
+  className="btn btn-outline-dark btn-sm mb-0"
+  type="button"
+  name="button"
+  data-bs-toggle="modal"
+  data-bs-target="#alumnimodel"
+  style={{
+    background: 'linear-gradient(45deg, #007bff, #0056b3)', 
+    border: '2px solid orange',
+    boxShadow: '0 0 10px rgba(255, 165, 0, 0.5)',
+    padding: '10px 12px', 
+    color: 'white', 
+    fontWeight: 'bold', 
+    transition: 'all 0.3s ease', 
+    margin : '10px'
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.boxShadow = '0 0 15px rgba(255, 165, 0, 0.7)';
+    e.currentTarget.style.transform = 'scale(1.05)'; // Slightly enlarge on hover
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.boxShadow = '0 0 10px rgba(255, 165, 0, 0.5)';
+    e.currentTarget.style.transform = 'scale(1)'; // Reset size
+  }}
+>
+  View Our Alumni Details
+</button>
+
+      </div>
+
+      
+              
+       
+     
+    </section>
+   
+    {/* Placements details */}
+    <div
+  className="modal fade"
+  id="placementsModal"
+  tabIndex="-1"
+  role="dialog"
+  aria-labelledby="placementsModalLabel"
+  aria-hidden="true"
+>
+  <div className="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="placementsModalLabel" style={{ color: 'black' }}>
+          <b>Placement Details</b>
+        </h5>
+        <button
+          type="button"
+          className="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <i className="fa fa-times text-dark" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div className="modal-body">
+        <div className="container-fluid">
+          <h4 className="mb-2 text-rose text-normal" style={{ color: 'black' }}><b>Placed Candidates</b></h4>
+          <div className="row">
+            <div className="col-md-12">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th style={{ color: 'black' }}>Image/Video</th>
+                    <th style={{ color: 'black' }}>Name</th>
+                    <th style={{ color: 'black' }}>Package</th>
+                    <th style={{ color: 'black' }}>Placed Company</th>
+                    <th style={{ color: 'black' }}>Education</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    {
+                      image: "../../assets/Traineeimgs/prasad.jpeg",
+                      youtubeLink: "https://www.youtube.com/watch?v=m7OWXtbiXX8",
+                      name: "Prasad",
+                      package: "26 LPA",
+                      company: "PureSoftware Technologies Pvt Ltd",
+                      education: "Degree"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/ThulasiKumar.jpeg",
+                      youtubeLink: "",
+                      name: "Thulasi",
+                      package: "22 LPA",
+                      company: "InfoSys",
+                      education: "Degree"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/sarat.jpeg",
+                      youtubeLink: "https://www.youtube.com/watch?v=anotherLink",
+                      name: "Sarat",
+                      package: "14 LPA",
+                      company: "Intellishift Technology Pvt Ltd",
+                      education: "B.Tech"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/mukunda.jpeg",
+                      youtubeLink: "https://www.youtube.com/watch?v=someLink",
+                      name: "Mukunda",
+                      package: "14 LPA",
+                      company: "HSBC Bank",
+                      education: "Degree"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/veeresh.jpeg",
+                      youtubeLink: "",
+                      name: "Veeresh",
+                      package: "9 LPA",
+                      company: "CGI",
+                      education: "Degree"
+                    },
+                    
+                    {
+                      image: "../../assets/Traineeimgs/anuradha.jpeg",
+                      youtubeLink: "",
+                      name: "Anuradha",
+                      package: "10 LPA",
+                      company: "DevCrafts",
+                      education: "MCA"
+                    },
+                    
+                    {
+                      image: "../../assets/Traineeimgs/thulasi ram.jpeg",
+                      youtubeLink: "",
+                      name: "Thulasi Kumar",
+                      package: "9 LPA",
+                      company: "TCS",
+                      education: "B.Tech"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/pavithra.jpeg",
+                      youtubeLink: "https://www.youtube.com/watch?v=someOtherLink",
+                      name: "Lavanya",
+                      package: "13 LPA",
+                      company: "HCL",
+                      education: "B.Tech"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/supriya.jpeg",
+                      youtubeLink: "",
+                      name: "Supriya",
+                      package: "10 LPA",
+                      company: "Virtusa",
+                      education: "B.Tech"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/Raviteja.JPG",
+                      youtubeLink: "",
+                      name: "Ravi",
+                      package: "10 LPA",
+                      company: "InfoSys",
+                      education: "B.Tech"
+                    },
+                   
+                    {
+                      image: "../../assets/Traineeimgs/ravi.jpeg",
+                      youtubeLink: "",
+                      name: "Ravi",
+                      package: "12 LPA",
+                      company: "IGT",
+                      education: "Degree"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/selvi.jpeg",
+                      youtubeLink: "",
+                      name: "Kalai Selvi",
+                      package: "15 LPA",
+                      company: "Wipro",
+                      education: "M.Tech"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/deepya.jpeg",
+                      youtubeLink: "",
+                      name: "Deepya",
+                      package: "13 LPA",
+                      company: "Majesco",
+                      education: "B.Tech"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/saveetha.jpeg",
+                      youtubeLink: "https://www.youtube.com/watch?v=videoForSavitha",
+                      name: "Savitha",
+                      package: "13 LPA",
+                      company: "Capgemini",
+                      education: "B.Tech"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/pramod.jpeg",
+                      youtubeLink: "https://www.youtube.com/watch?v=videoLink",
+                      name: "Pramod",
+                      package: "10 LPA",
+                      company: "DevCrafts",
+                      education: ""
+                    },
+                    
+                    {
+                      image: "../../assets/Traineeimgs/divya.jpeg",
+                      youtubeLink: "",
+                      name: "Divya",
+                      package: "11 LPA",
+                      company: "Capgemini",
+                      education: "B.Tech"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/rama mohan.jpeg",
+                      youtubeLink: "",
+                      name: "Mohan Kumar",
+                      package: "12 LPA",
+                      company: "Capgemini",
+                      education: "Degree"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/yuvaprasad.jpeg",
+                      youtubeLink: "",
+                      name: "Yuvaprasad",
+                      package: "11 LPA",
+                      company: "Cognizant",
+                      education: "Degree"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/neerosha.jpeg",
+                      youtubeLink: "",
+                      name: "Nirosha",
+                      package: "8 LPA",
+                      company: "Capgemini",
+                      education: "Degree"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/LikithKumar.jpeg",
+                      youtubeLink: "",
+                      name: "LikithKumar",
+                      package: "4.5 LPA",
+                      company: "K7InfoTech",
+                      education: "Degree"
+                    },
+                    {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "",
+                      name: "Sumanth",
+                      package: "18 LPA",
+                      company: "Majesco",
+                      education: "B.Tech"
+                  },
+                  {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "",
+                      name: "Guarav",
+                      package: "15 LPA",
+                      company: "Coforge",
+                      education: "B.Tech"
+                  },
+                  {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "https://www.youtube.com/watch?v=videoForVaralakshmi",
+                      name: "Varalakshmi",
+                      package: "12 LPA",
+                      company: "Infogain India Pvt Ltd",
+                      education: "MCA"
+                  },
+                  {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "",
+                      name: "Sundeep",
+                      package: "13 LPA",
+                      company: "Cient",
+                      education: "B.Tech"
+                  },
+                  {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "",
+                      name: "Harathi Priya",
+                      package: "12 LPA",
+                      company: "Harman International",
+                      education: "B.Tech"
+                  },
+                  {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "https://www.youtube.com/watch?v=yetAnotherLink",
+                      name: "SriRaghavendra",
+                      package: "24 LPA",
+                      company: "Birdeye Software India Private Limited",
+                      education: "MBA"
+                  },
+                  {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "",
+                      name: "Naveen Kumar",
+                      package: "15 LPA",
+                      company: "IntApp",
+                      education: "B.Tech"
+                  },
+                  {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "",
+                      name: "Sahana",
+                      package: "14 LPA",
+                      company: "Trigen",
+                      education: "Degree"
+                  },
+                  {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "",
+                      name: "Thulasi Ram",
+                      package: "12 LPA",
+                      company: "Xoriant",
+                      education: "Degree"
+                  },
+                  {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "https://www.youtube.com/watch?v=videoForPramod",
+                      name: "Pramod",
+                      package: "13 LPA",
+                      company: "BlueYandor",
+                      education: "B.Tech"
+                  },
+                  {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "https://www.youtube.com/watch?v=videoForShilpa",
+                      name: "Shilpa",
+                      package: "11 LPA",
+                      company: "Blackboard India Pvt Ltd",
+                      education: "M.Tech"
+                  },
+                  {
+                      image: "../../assets/Traineeimgs/studentimg.png",
+                      youtubeLink: "https://www.youtube.com/watch?v=anotherVideoLink",
+                      name: "Gautham Giri",
+                      package: "12 LPA",
+                      company: "Tech Systems",
+                      education: "B.Tech"
+                  }
+                  ].map((placement, index) => (
+                    <tr key={index}>
+                      <td>
+                        {placement.image && placement.youtubeLink ? (
+                          <div style={{ position: 'relative', display: 'inline-block' }}>
+                            <a href={placement.youtubeLink} target="_blank" rel="noopener noreferrer">
+                              <img src={placement.image} alt={placement.name} style={{ width: '100px' }} loading="lazy" />
+                              <i className="fa fa-youtube" style={{ 
+                                  position: 'absolute', 
+                                  top: '50%', 
+                                  left: '50%', 
+                                  transform: 'translate(-50%, -50%)', 
+                                  fontSize: '30px', 
+                                  color: 'red', 
+                                  opacity: 0, 
+                                  transition: 'opacity 0.3s' 
+                                }}></i>
+                            </a>
+                          </div>
+                        ) : placement.image ? (
+                          <a href={placement.image} target="_blank" rel="noopener noreferrer">
+                            <img src={placement.image} alt={placement.name} style={{ width: '100px' }} loading="lazy" />
+                          </a>
+                        ) : null}
+                      </td>
+                      <td style={{ color: 'black' }}>{placement.name}</td>
+                      <td style={{ color: 'black' }}>{placement.package}</td>
+                      <td style={{ color: 'black' }}>{placement.company}</td>
+                      <td style={{ color: 'black' }}>{placement.education}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{/* trainee details */}
+<div
+  className="modal fade"
+  id="traineeModal"
+  tabIndex="-1"
+  role="dialog"
+  aria-labelledby="placementsModalLabel"
+  aria-hidden="true"
+>
+  <div
+    className="modal-dialog modal-dialog-centered modal-xl"
+    role="document"
+  >
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="placementsModalLabel" style={{ color: 'black' }}>
+          <b>Trainee Details</b>
+        </h5>
+        <button
+          type="button"
+          className="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <i className="fa fa-times text-dark" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div className="modal-body">
+        <div className="container-fluid">
+          <h4 className="mb-2 text-rose text-normal" style={{ color: 'black' }}><b>Our Students</b></h4>
+          <div className="row">
+            <div className="col-md-12">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th style={{ color: 'black' }}>Image</th>
+                    <th style={{ color: 'black' }}>Name</th>
+                    <th style={{ color: 'black' }}>College Name</th>
+                    <th style={{ color: 'black' }}>Degree</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { image: "../../assets/Traineeimgs/anuradha.jpeg", name: "Biradar Anuradha", college: "Gulbarga University Main Campus", degree: "Degree" },
+                    { image: "../../assets/Traineeimgs/supriya.jpeg", name: "Yalla Supriya", college: "", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/selvi.jpeg", name: "K Kalai Selvi", college: "A1.Ameen Engineering College", degree: "Mtech" },
+                    { image: "../../assets/Traineeimgs/neerosha.jpeg", name: "Silpi Nirosha", college: "Sitams College", degree: "Mtech" },
+                    { image: "../../assets/Traineeimgs/praneetha.jpeg", name: "Ganginani Praneetha", college: "Sri Venkateshwara Engineering College", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/aruna.jpeg", name: "P Aruna", college: "VignanaSudha Degree College", degree: "Degree" },
+                    { image: "../../assets/Traineeimgs/latha.jpeg", name: "G Latha", college: "VPKN Government Degree College", degree: "Degree" },
+                    { image: "../../assets/Traineeimgs/deepya.jpeg", name: "Kalavakunta Deepya", college: "Vemu Institute of Engineering And Technology", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/divya.jpeg", name: "D Divya", college: "MVSR Engineering College", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/pavithra.jpeg", name: "R Pavithra", college: "", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/vidya.jpeg", name: "BC Vidya", college: "SSIT", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/saveetha.jpeg", name: "P Savitha", college: "KNS Institute of Technology", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/adeshwaramma.jpeg", name: "Neelam Adeshwaramma", college: "A.L.M.N Womens Degree College", degree: "Degree" },
+                    { image: "../../assets/Traineeimgs/veeresh.jpeg", name: "Panchal Veeresh", college: "MITS (Manglore Institute)", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/udaykiran.jpeg", name: "R S UdayKumar Reddy", college: "RGM Engineering College", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/rama mohan.jpeg", name: "Koduru Rama Mohan", college: "", degree: "MSC" },
+                    { image: "../../assets/Traineeimgs/thulasi ram.jpeg", name: "R Thulasi Ram", college: "", degree: "Degree" },
+                    { image: "../../assets/Traineeimgs/siva.jpeg", name: "Maddu Siva Krishna", college: "Andhra University", degree: "MSC" },
+                    { image: "../../assets/Traineeimgs/ravi.jpeg", name: "Waghmare Ravi Suryakanth", college: "Radhai BCA College", degree: "Degree" },
+                    { image: "../../assets/Traineeimgs/udaykiran.jpeg", name: "Nallabothu Uday Kiran", college: "SV Engineering College", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/pramod.jpeg", name: "Gaikwad Pramod", college: "DR.BAM University", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/kiran.jpeg", name: "Mekalathuru Kiran Kumar", college: "SVV Degree College", degree: "Degree" },
+                    { image: "../../assets/Traineeimgs/shantanu.jpeg", name: "Jondhale Shantanu", college: "U.D.C.T Aurangabad", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/sasi.jpeg", name: "Apithiri Sasi Kiran", college: "SV Engineering College", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/harish.jpeg", name: "S Harish", college: "S.E.A College Of Engineering And Technology", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/babu.jpeg", name: "Mallele Babu", college: "", degree: "Degree" },
+                    { image: "../../assets/Traineeimgs/likith.jpeg", name: "Konapareddy Likith Kumar", college: "SDHR Degree College", degree: "Degree" },
+                    { image: "../../assets/Traineeimgs/yuvaprasad.jpeg", name: "N Yuva Prasad", college: "Siddhartha Institute Of Engineering And Technology", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/chandrakanth.jpeg", name: "Umachagi Chandrakanth", college: "S.K.S.V.M.A.C.E.T Lakshmeshwar", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/krishna chaitanya.jpeg", name: "A Krishna Chaitanya", college: "", degree: "MBA" },
+                    { image: "../../assets/Traineeimgs/mukunda.jpeg", name: "N Mukunda", college: "Teksystems", degree: "MSC" },
+                    { image: "../../assets/Traineeimgs/shivareddy.jpeg", name: "Gangula Shiva Reddy", college: "Vaagdevi Engineering College", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/chaitanya.jpeg", name: "Chaitanya Varma", college: "Banglore University", degree: "Degree" },
+                    { image: "../../assets/Traineeimgs/Mouni.jpeg", name: "Guruka Mounika", college: "Sri Rama Educational Group Of Institutions", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/kumar.jpeg", name: "Sirapuram Kumar", college: "Annamacharya Engineering College", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/Reddi.jpeg", name: "Gudda Reddi Kumari", college: "SVCE Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Traineeimgs/Gnana.jpeg", name: "Mekalathuri GnanaSekhar", college: "Siddhartha Institute Of Engineering And Technology", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/manish.jpeg", name: "C Manish", college: "Sitams College", degree: "Btech" },
+                   
+                    { image: "../../assets/Traineeimgs/OldStudents/Neelima.jpg", name: "Neelima", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/sowjanya.jpg", name: "Sowjanya", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/Kalpana.jpg", name: "Kalpana", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/chilukalaShanthi.jpg", name: "Shanthi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/sujitha.jpg", name: "Sujitha", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/sindhuja.jpg", name: "Sindhuja", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/vijayalakshmi.jpg", name: "Vijaya Lakshmi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/monika.jpg", name: "Monika", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/Anjaneyulu.jpg", name: "Ramanjaneyulu", college: "JBICT, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/Pragna.jpg", name: "D.S.L. Pragna", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/Thejaswini.jpg", name: "Thejaswini", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/g geethanjali.jpg", name: "Geethanjali", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/venkata teja.jpg", name: "Venkata Teja", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/sandeep kumar.jpg", name: "Sandeep Kumar", college: "MIST, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/thalapaneni tharun kumar.jpg", name: "Tharun Kumar", college: "JBICT, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/priyamvada.jpg", name: "Priyamvada", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/nellepalli sudhakar.jpg", name: "N. Sudhakar", college: "SVCET, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/p ravi.jpg", name: "P. Ravi", college: "JBICT, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/maheshwari.jpg", name: "Maheswari", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/polaiah.jpg", name: "Polaiah", college: "SVCET, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/prabhavathi.jpg", name: "Prabhavathi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/kasumurthi thulasi.jpg", name: "Thulasi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/priyanka.jpg", name: "Priyanka", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/varalakshmi.jpg", name: "P. Varalakshmi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/amulya.jpg", name: "V. Amulya", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/charishma.jpg", name: "Koduru Charishma", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/harshavardhini.jpg", name: "Beesabattina Harsha Vardhini", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/vinodh kumar.jpg", name: "Vinodh Kumar", college: "SEICOM, Tirupathi", degree: "Degree" },
+    { image: "../../assets/Traineeimgs/OldStudents/vijaykumar.jpg", name: "K. Vijaya Kumar", college: "S.V.U, Tirupathi", degree: "M.Sc Computr Science" },
+    { image: "../../assets/Traineeimgs/OldStudents/chowhan.jpg", name: "Shaik Mohammad Chowhan", college: "S.V.C.E, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/hari krishna.jpg", name: "Hari Krishna Thopugunta", college: "SVNE, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/prudhvi.jpg", name: "Prudhvi Devineni", college: "Sree Vidyanikethan, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/charisree.jpg", name: "CH. Charisree", college: "JBWEC, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/d kalyan.jpg", name: "D. Kalyan", college: "S.V.U, Tirupathi", degree: "Degree" },
+    { image: "../../assets/Traineeimgs/OldStudents/n thulasi.jpg", name: "N. Thulasi", college: "Swetha Engineering, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/surishna.jpg", name: "Chamarthi Surishna", college: "KMMITS, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/kodandaiah.jpg", name: "M. Kodanhaih", college: "SVNE, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/godi deepa.jpg", name: "Godi Deepa", college: "NECG, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/OldStudents/chevuru keerthi.jpg", name: "Chevuru Keerthi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/OldStudents/uma devi.jpg", name: "Talluri Uma Devi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Mukka Hari Priya", college: "Priyadarshi, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "T. Harish", college: "S.V.U, Tirupathi", degree: "M.Sc Computr Science" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "K Gowtham", college: "VignanaSudha Degree College", degree: "Degree" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "T Sai Tharun", college: "Annamacharya Engineering College", degree: "Btech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "T Sai Deepak", college: "Annamacharya Engineering College", degree: "Btech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "A BabuReddy", college: "Geethanjali Institute of P.G Studies", degree: "MBA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Kovuru Nikhil Sai", college: "SVCE Tirupathi", degree: "Btech" },
+
+                  ].map((student, index) => (
+                    <tr key={index}>
+                      <td><img src={student.image} alt={student.name} style={{ width: '100px' }} loading="lazy" /></td>
+                      <td style={{ color: 'black' }}>{student.name}</td>
+                      <td style={{ color: 'black' }}>{student.college}</td>
+                      <td style={{ color: 'black' }}>{student.degree}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{/* alumni details */}
+
+<div
+  className="modal fade"
+  id="alumnimodel"
+  tabIndex="-1"
+  role="dialog"
+  aria-labelledby="placementsModalLabel"
+  aria-hidden="true"
+>
+  <div
+    className="modal-dialog modal-dialog-centered modal-xl"
+    role="document"
+  >
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="placementsModalLabel" style={{ color: 'black' }}>
+          <b>Alumni Details</b>
+        </h5>
+        <button
+          type="button"
+          className="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <i className="fa fa-times text-dark" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div className="modal-body">
+        <div className="container-fluid">
+          <h4 className="mb-2 text-rose text-normal" style={{ color: 'black' }}><b>Our Alumni</b></h4>
+          <div className="row">
+            <div className="col-md-12">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th style={{ color: 'black' }}>Image</th>
+                    <th style={{ color: 'black' }}>Name</th>
+                    <th style={{ color: 'black' }}>College Name</th>
+                    <th style={{ color: 'black' }}>Degree</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { image: "../../assets/Alumniimgs/Surendra nath reddy.jpg", name: "Y Surendharnath Reddy", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/K.Anil kumar.jpg", name: "K Anil Kumar Raju", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/V Mahendra.jpg", name: "V Mahendra", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Mohan reddy.jpg", name: "Mutra Mohan Reddy", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Lavanya.jpg", name: "E Lavanya", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Shaheena.jpg", name: "Sunkesula Shaheena", college: "Emeralds, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Yeturi pavani.jpg", name: "Yeturi Pavani", college: "Emeralds, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Usha.jpg", name: "Pasupuleti Usha", college: "Emeralds, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Neeraja.jpg", name: "Neeraja Varma", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Swetha.jpg", name: "Swetha", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Nagamani.jpg", name: "Nagamani Komarika", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Nagamani.k.jpg", name: "Nagamani Kasumuru", college: "Emeralds, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Rovilla rani.jpg", name: "Ravilla Rani", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Chinnaiah.jpg", name: "Pallapu Chinnaiah", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Sivanath reddy.jpg", name: "N Sivanath Reddy", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Subramanyam reddy.jpg", name: "K Subramanyam Reddy", college: "Emeralds, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Hussain.jpg", name: "G Hussain", college: "Emeralds, Tirupathi Advance Institute", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Ramakrishna reddy.jpg", name: "Cherpati Ramakrishna Reddy", college: "Emeralds, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Suneel kumar.jpg", name: "S Suneel Kumar", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Rajasekhar reddy.jpg", name: "Reddivari RajaSekharReddy", college: "Emeralds, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Sudhakar reddy.jpg", name: "S Sudhakar Reddy", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Adi seshu.jpg", name: "K Adhi Sheshu", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Raja.jpg", name: "K Raja", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Rajesh.jpg", name: "Buggapati Rajesh", college: "EAIMS, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Mahendra reddy.jpg", name: "Mahendra Reddy", college: "Emeralds, Tirupathi College", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Dasari ravi.jpg", name: "Dasari Ravi", college: "Emeralds, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Ramanji.jpg", name: "Gogula Ramanji", college: "Emeralds, Tirupathi", degree: "MCA" },
+                    { image: "../../assets/Alumniimgs/Lavanya.jpg", name: "Yedlapalli Lavanya", college: "S.P.M.V.V, Tirupathi", degree: "Btech" },
+                    { image: "../../assets/Traineeimgs/studentimg.png", name: "B Siva Kumar", college: "S.P.M.V.V, Tirupathi", degree: "Btech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Malla Sai Sampath", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Bole Keerthi", college: "Emeralds, Tirupathi", degree: "Btech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "K Sreejitha", college: "Emeralds, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "M Jayasimha Gouda", college: "EAIMS, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Gnana Suraj", college: "Seshachala Institute Of Technology, Puttur", degree: "Btech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "R Mahesh Kumar", college: "Seshachala Institute Of Technology, Puttur", degree: "Btech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Gudi Koti Reddy", college: "EAIMS, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Devapathni Rani", college: "Swetha College, Tirupathi", degree: "Btech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "G Siva Prasad Naidu", college: "SEAGI, Tirupathi", degree: "Btech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Banala Pavithra", college: "S.P.M.V.V, Tirupathi", degree: "Btech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Venkatachalam Rekha", college: "S.P.M.V.V, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Kusumurthi Thulasi", college: "S.P.M.V.V, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Kadathukalam Vikram", college: "A.I.T.S, Tirupathi", degree: "Btech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "G Venkat Lakshman", college: "Emeralds, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Maddineni Preethi Purnima", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Samireddy Keerthi", college: "SPMVV, Tirupathi", degree: "Btech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Yasam KalaPriya", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Neelima", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Sowjanya", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Kalpana", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Shanthi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Sujitha", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Sindhuja", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Vijaya Lakshmi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Monika", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Ramanjaneyulu", college: "JBICT, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "D.S.L. Pragna", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Kalpana", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Thejaswini", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Geethanjali", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Venkata Teja", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Sandeep Kumar", college: "MIST, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Tharun Kumar", college: "MIST, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Priyamvada", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "N. Sudhakar", college: "SVCET, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "P. Ravi", college: "SVCET, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Maheswari", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Polaiah", college: "SVCET, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "T. Harish", college: "S.V.U, Tirupathi", degree: "M.SC" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Prabhavathi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Thulasi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Priyanka", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "P. Varalakshmi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "V.Amulya", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Koduru Charishma", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Beesabattina Harsha Vardhini", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Vinodh Kumar Tirupathi", college: "SEICOM, Tirupathi", degree: "Degree" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "CH. Charisree", college: "JBWEC, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "D. Kalyan", college: "S.V.U, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Gosala Suresh", college: "EAIMS, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "N. Thulasi", college: "Swetha Engineering, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Prudhvi Devineni", college: "Sree Vidyanikethan, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Chamarthi Surishna", college: "KMMITS, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "M. Kodanhaih", college: "SVNE, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Mukka Hari Priya", college: "Priyadarshi, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Godi Deepa", college: "NECG, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Chevuru Keerthi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Talluri Uma Devi", college: "Sri Padmavathi Mahila University, Tirupathi", degree: "MCA" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Shaik Mohammad Chowhan", college: "S.V.C.E, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "Hari Krishna Thopugunta", college: "SVNE, Tirupathi", degree: "B.Tech" },
+    { image: "../../assets/Traineeimgs/studentimg.png", name: "K. Vijaya Kumar", college: "S.V.U, Tirupathi", degree: "B.Tech" }
+
+                  ].map((student, index) => (
+                    <tr key={index}>
+                      <td><img src={student.image} alt={student.name} style={{ width: '100px' }} loading="lazy" /></td>
+                      <td style={{ color: 'black' }}>{student.name}</td>
+                      <td style={{ color: 'black' }}>{student.college}</td>
+                      <td style={{ color: 'black' }}>{student.degree}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
     </div>
+
+
+
   );
 };
 

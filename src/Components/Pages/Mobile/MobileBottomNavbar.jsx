@@ -33,15 +33,17 @@ const MobileBottomNavbar = () => {
                 </span>
               </div>
               <div class="footer-item">
-                <Link to="/MobileCareer" class="footer-link bottom-buttons">
+                <Link to="/MobileTrainingPlacements" class="footer-link bottom-buttons">
                   <i class="ri-login-box-line text-dark" aria-hidden="true"></i>
                 </Link>
                 <span class="text-dark text-xs">
-                  <small>Career</small>
+                  <small>Trainings</small>
+                  
+
                 </span>
               </div>
               <div class="footer-item">
-                <Link to="/MobileContactUs" class="footer-link bottom-buttons">
+                <Link to="/MobileCareer" class="footer-link bottom-buttons">
                   <i class="ri-group-line text-dark" aria-hidden="true"></i>
                 </Link>
                 <span class="text-dark text-xs">

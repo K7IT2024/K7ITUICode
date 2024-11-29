@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="display">
-      <div class="position-relative mt-6">
+      <div class="position-relative mt-3">
         <div class="container">
-          <div class="card bg-gradient-dark z-index-3">
+          <div class="card bg-gradient-dark z-index-2">
             <div class="card-body">
               <div class="row">
                 <div class="col-md-8 mx-auto text-center my-auto">
@@ -19,29 +19,30 @@ const Footer = () => {
                 </div>
               </div>
               <div className="row d-flex justify-content-center text-center align-items-center">
-                <div className="col-lg-4">
-                  <a
-                    href="#"
-                    target="_blank"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    <div class="p-3 info-horizontal d-flex align-items-center">
-                      <div class="icon icon-md icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        
-                      </div>
-                      <div class="description ps-3">
-                        <p class="mb-0 text-white">
-                          258, 3rd cross, <br />
-                          Jayanthi Nagar Ext, Horamavu,
-                          <br />
-                          Bangalore Pin code -560043
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+              <div className="col-lg-4">
+  <a
+    href="https://www.google.com/maps/place/258,+3rd+cross,+Jayanthi+Nagar+Ext,+Horamavu,+Bangalore+Pin+code+-560043/@13.0279834,77.668044,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae11339ddb83d1:0x938eceb3dbb15991!8m2!3d13.0279834!4d77.670232!16s%2Fg%2F11hys4th7c?entry=ttu"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div class="p-3 info-horizontal d-flex align-items-center">
+      <div class="icon icon-md icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+      </div>
+      <div class="description ps-3">
+         <p class="mb-0 text-white">
+        New Branch (Channasandra, Kalkere Branch) : Door: 268, Site: 15,<br/>
+         Near Arthala Nilayam, Near Rampura  <br/>
+         Lake, Kalkeri Channasandra village,<br />
+         
+          Bangalore Pin code -560043
+        </p>
+      </div>
+     
+    </div>
+  </a>
+</div>
+
                 <div className="col-lg-3">
                   <div class="p-3 info-horizontal d-flex align-items-center">
                     <div class="icon icon-md icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl">
@@ -72,16 +73,18 @@ const Footer = () => {
       <footer class="footer pb-5 pt-8 bg-light mt-n5 position-relative">
         <div class="container align-items-center">
           <div class="row">
-            <div class="col-lg-2">
+          <div class="col-lg-2">
             <img
                   src="../assets/img/logo.png"
-                  alt="Bootstrap"
-                  width="100"
-                  height="50"
+                  alt="logo"
+                  width="150"
+                  height="30"
                   style={{ objectFit: "contain" }}
                 />
             </div>
-            <div class="col-lg-6 text-center">
+            
+            <div class="col-lg-7 text-center">
+              
               <ul class="nav flex-row align-items-center mb-5 mt-sm-0 justify-content-center">
                 <li class="nav-item">
                   <Link class="nav-link" to="/Aboutus">

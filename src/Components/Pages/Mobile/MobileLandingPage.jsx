@@ -15,11 +15,14 @@ const MobileLandingPage = () => {
               development, backend development, design and prototying, software
               development, testing, development and application maintenance
             </p>
+            
             <div class="buttons fadeIn2 fadeInBottom">
               <button type="button" class="btn bg-gradient-info">
                 Contact Us
               </button>
+            
             </div>
+            
           </div>
         </div>
         <div class="mb-4 pt-6">

@@ -11,7 +11,7 @@ const MobileLeadershipInside = () => {
         <div>
           <div class="d-block blur-shadow-image">
             <img
-              src="../../assets/img/K7it.png"
+              src="../../assets/img/k71.jpg"
               alt="img-blur-shadow-blog-2"
               class="img-full-mobile "
               loading="lazy"

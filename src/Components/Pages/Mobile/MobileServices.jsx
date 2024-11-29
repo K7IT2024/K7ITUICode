@@ -115,7 +115,7 @@ const MobileServices = () => {
                 <div class="card-header p-0 position-relative mt-n4 mx-2 z-index-2">
                   <a class="d-block blur-shadow-image">
                     <img
-                      src="https://www.agilevision.io/content/images/size/w600/2024/04/17.png"
+                      src="../../assets/imgs/uiuximg"
                       alt="img-blur-shadow"
                       className="img-fluid shadow border-radius-lg services-images"
                       loading="lazy"
@@ -147,7 +147,7 @@ const MobileServices = () => {
                 <div class="card-header p-0 position-relative mt-n4 mx-2 z-index-2">
                   <a class="d-block blur-shadow-image">
                     <img
-                      src="https://www.ashokitech.com/uploads/course/advanced-java-online-training.jpeg"
+                      src="../../assets/imgs/uiuximg"
                       alt="img-blur-shadow"
                       className="img-fluid shadow border-radius-lg services-images"
                       loading="lazy"
